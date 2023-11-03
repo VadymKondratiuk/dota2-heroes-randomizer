@@ -27,5 +27,4 @@ function setRandomHero(){
     text.textContent = heroesArray[randHero];
     img.style.display = "block";
     img.src = "img/heroes/1 (" + (parseInt(randHero) + 2) + ").png";
-    console.log(heroesArray[randHero]);
 }

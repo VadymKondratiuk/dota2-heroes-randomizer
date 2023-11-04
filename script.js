@@ -22,9 +22,20 @@ function setRandomHero(){
 
     let img = document.getElementById("image");
     let text = document.getElementById("text");
+    let linka = document.getElementById("illias");
     
     let randHero = getRandomHero();
     text.textContent = heroesArray[randHero];
     img.style.display = "block";
     img.src = "img/heroes/1 (" + (parseInt(randHero) + 2) + ").png";
+    if(randHero == 37) {
+        linka.removeAttribute("disabled");
+        linka.style.cursor = "pointer";
+        linka.href = "https://www.youtube.com/watch?v=480XbI6MNGo&ab_channel=alimebit";
+    }
+    else {
+        linka.addEventListener("click", function(event) {
+            event.preventDefault();
+        });
+    }
 }

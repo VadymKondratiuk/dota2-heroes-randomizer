@@ -26,6 +26,10 @@
     color: #fff;
 }
 
+#illias {
+    cursor: default;
+}
+
 .header-img {
     border-radius: 15px;
     margin-left: 20px;
